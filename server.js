@@ -8,7 +8,7 @@ const shoppingListRouter = require('./shoppingListRouter');
 const recipesRouter = require('./recipesRouter');
 
 // log the http layer
-app.use(morgan('common'));
+app.use(morgan(':date[web] :url :method :status'));
 
 app.use(express.static('public'));
 
